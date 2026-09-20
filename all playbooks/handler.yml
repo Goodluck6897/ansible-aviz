@@ -1,7 +1,7 @@
 ---
 - name: Install httpd package on all hosts 
   hosts: all
-  become: true
+  become: true #become: true activates privilege escalation, allowing Ansible to execute tasks with administrative or root privileges on the target system.
   tasks:
   - name: Install httpd package
     yum:
