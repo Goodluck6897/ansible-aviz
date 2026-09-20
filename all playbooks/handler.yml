@@ -7,7 +7,7 @@
     yum:
       name: httpd
       state: installed
-    notify: start apache
+    notify: start apache #tells a task to trigger a specific background operations task (called a "handler") named start apache
 
   handlers:
   - name: start apache
